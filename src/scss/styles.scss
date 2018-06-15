@@ -1,16 +1,20 @@
 // Variable Overrides 
 
-
 $theme-colors: (
-  "primary":orange
+  "primary":black
   );
 
-  $body-bg: #ededed;
+  $body-bg: #fff;
 
   .jumbotron {
-    background-color: #ffffff !important;
-    border-top: 3px solid rgb(219, 219, 219);
+    color: #fff;
 }
+
+  .jumbotronImg {
+    background-image: url("../img/dubaiheader.jpg");
+    background-size: cover;
+    background-position: center;
+  }
 
 img {
   border-style: none;
@@ -24,7 +28,7 @@ img {
 }
 
 
-h3 {
+.subhead {
   -webkit-box-shadow: -10px 10px 2px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: -10px 10px 2px 0px rgba(0,0,0,0.75);
   box-shadow: -10px 10px 2px 0px rgba(0,0,0,0.75);
@@ -32,7 +36,19 @@ h3 {
   border: 2px solid orange;
   padding: 10px;
   text-transform: uppercase;
+  margin-right: 35%;
   }
+
+  .lead {
+    text-transform: uppercase;
+    font-display: italic;
+    font-weight: bold;
+  }
+
+  .carousel img {
+    height: 400px;
+  }
+ 
 
 .footer {
   height: 180px;
@@ -40,8 +56,17 @@ h3 {
   margin-top: 5%;
 }
 
-
-
 // Bootstrap Sass Imports
 @import "node_modules/bootstrap/scss/bootstrap";
 
+// Required
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+// Optional
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/images";
+@import "node_modules/bootstrap/scss/code";
+@import "node_modules/bootstrap/scss/grid";
