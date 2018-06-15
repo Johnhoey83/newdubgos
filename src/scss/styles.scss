@@ -1,0 +1,47 @@
+// Variable Overrides 
+
+
+$theme-colors: (
+  "primary":orange
+  );
+
+  $body-bg: #ededed;
+
+  .jumbotron {
+    background-color: #ffffff !important;
+    border-top: 3px solid rgb(219, 219, 219);
+}
+
+img {
+  border-style: none;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  -webkit-box-shadow: -10px 10px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -10px 10px 2px 0px rgba(0, 0, 0,0.75);
+  box-shadow: -10px 10px 2px 0px rgba(0, 0, 0,0.75);
+  background: transparent(0, 0, 0, 0.1);
+  border: 2px solid orange;
+}
+
+
+h3 {
+  -webkit-box-shadow: -10px 10px 2px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -10px 10px 2px 0px rgba(0,0,0,0.75);
+  box-shadow: -10px 10px 2px 0px rgba(0,0,0,0.75);
+  background: transparent(0, 0, 0, 0.1);
+  border: 2px solid orange;
+  padding: 10px;
+  text-transform: uppercase;
+  }
+
+.footer {
+  height: 180px;
+  background-color: orange;
+  margin-top: 5%;
+}
+
+
+
+// Bootstrap Sass Imports
+@import "node_modules/bootstrap/scss/bootstrap";
+
